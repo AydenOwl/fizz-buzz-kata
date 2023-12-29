@@ -1,8 +1,12 @@
 export class FizzBuzz {
     public display(number: number): string {
-        if (number % 3 === 0) {
+        if (this.isMultipleOfThree(number)) {
             return "Fizz"
         }
         return number.toString()
+    }
+
+    private isMultipleOfThree(number: number) {
+        return number % 3 === 0;
     }
 }
