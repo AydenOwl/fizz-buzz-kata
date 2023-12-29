@@ -13,11 +13,15 @@ export class FizzBuzz {
         return number.toString()
     }
 
-    private isMultipleOfFive(number: number) {
-        return number % 5 === 0;
+    private isMultipleOfThree(number: number) {
+        return this.isMultipleOf(number, 3)
     }
 
-    private isMultipleOfThree(number: number) {
-        return number % 3 === 0;
+    private isMultipleOfFive(number: number) {
+        return this.isMultipleOf(number, 5);
+    }
+
+    private isMultipleOf(number: number, multiple: number) {
+        return number % multiple === 0;
     }
 }
