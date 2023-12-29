@@ -3,10 +3,14 @@ export class FizzBuzz {
         if (this.isMultipleOfThree(number)) {
             return "Fizz"
         }
-        if (number % 5 === 0) {
+        if (this.isMultipleOfFive(number)) {
             return "Buzz"
         }
         return number.toString()
+    }
+
+    private isMultipleOfFive(number: number) {
+        return number % 5 === 0;
     }
 
     private isMultipleOfThree(number: number) {
