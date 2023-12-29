@@ -16,4 +16,9 @@ describe("FizzBuzz", () => {
         const result = new FizzBuzz().display(multipleOfFive);
         expect(result).toStrictEqual("Buzz")
     })
+    it("displays FizzBuzz when number is divisible both by 3 and 5", () => {
+        const number = 15
+        const result = new FizzBuzz().display(number)
+        expect(result).toStrictEqual("FizzBuzz")
+    })
 })

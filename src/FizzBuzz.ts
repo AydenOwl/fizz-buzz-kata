@@ -1,11 +1,15 @@
 export class FizzBuzz {
     public display(number: number): string {
+        if (this.isMultipleOfThree(number) && this.isMultipleOfFive(number)) {
+            return "FizzBuzz"
+        }
         if (this.isMultipleOfThree(number)) {
             return "Fizz"
         }
         if (this.isMultipleOfFive(number)) {
             return "Buzz"
         }
+
         return number.toString()
     }
 
