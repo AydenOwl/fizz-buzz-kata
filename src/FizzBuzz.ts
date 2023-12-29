@@ -3,6 +3,9 @@ export class FizzBuzz {
         if (this.isMultipleOfThree(number)) {
             return "Fizz"
         }
+        if (number % 5 === 0) {
+            return "Buzz"
+        }
         return number.toString()
     }
 

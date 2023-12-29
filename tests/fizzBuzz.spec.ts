@@ -11,4 +11,9 @@ describe("FizzBuzz", () => {
         const result = new FizzBuzz().display(multipleOfThree);
         expect(result).toStrictEqual("Fizz")
     })
+    it("displays Buzz when number is divisible by 5", () => {
+        const multipleOfFive = 25
+        const result = new FizzBuzz().display(multipleOfFive);
+        expect(result).toStrictEqual("Buzz")
+    })
 })
