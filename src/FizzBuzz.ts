@@ -1,13 +1,18 @@
 export class FizzBuzz {
     public display(number: number): string {
-        if (this.isMultipleOfThree(number) && this.isMultipleOfFive(number)) {
-            return "FizzBuzz"
-        }
+        let result = ""
+
         if (this.isMultipleOfThree(number)) {
-            return "Fizz"
+            result += "Fizz"
         }
         if (this.isMultipleOfFive(number)) {
-            return "Buzz"
+            result += "Buzz"
+        }
+
+        const isMultiple = result !== "";
+
+        if (isMultiple) {
+            return result
         }
 
         return number.toString()
